@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <pre>
+        There are five different position values:
+        (a)Static
+        (b)Relative 
+        (c)Fixed
+        (d)Absolute
+        (e)Sticky  
+    </pre>
+    <pre>
+        A parent container with 4 boxes side by side.
+    </pre>
+    <div class="parent">
+        <div class="box" id="one">One</div>
+        <div class="box" id="two">Two</div>
+        <div class="box" id="three">Three</div>
+        <div class="box" id="four">Four</div>
+    </div>
+    <pre>
+        <i>By default, position is set to static. It positions based on the layout in the flow.</i> 
+    </pre>
+    <pre>
+        <b>Position absolute vs Position relative</b>
+        Position relative comes in without changing the layout around it. It leaves a gap for any box/text where it would have been had it not been position.
+        While position absolute does not leave any gap for an element where it had been. The position is totally based on its parent position. 
+    </pre>
+    <hr>
+    <p>
+        <b>Position fixed</b>
+    </p>
+    <p>
+        An element with psoition fixed is positioned relative to the viewport which means it always stays in the same place even if the page is scrolled. A fix element does not leave a gap in the page where it would normally have been located.
+    </p>
+    <div class="fixed">This div element has position: fixed;</div>
+<!--
+    <p>
+        <b>Another example of position absolute vs relative</b>
+    </p>
+    <div class="rp">This div element has position: relative;</div>
+    <div class="ap">This div element has position: absolute;</div>
+-->
+    <p>
+        <b>Position sticky!</b>
+    </p>
+    <p>An element with position sticky is positioned based on the user's scroll position. Such an element toggles between relative and fixed, dependig on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it <i>sticks</i> in place like position fixed. Internet explorer does not support sticky positioning and safari requires a -webkit- prefix.</p>
+    <div class="sticky">I am Sticky!</div>
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+    <p>Scroll back up to remove the stickyness.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>It really is sticking &#128512;&#128077;</p>
+    <p>
+        <b>Positioning text in an image</b>
+    </p>
+    <div class="container">
+        <img class="rlbt" src="someplace.jpg" alt="Cinque Terre" width="1000" height="300">
+        <div class="topright">Top right</div>
+        <div class="topleft">Top left</div>
+        <div class="bottomright">Bottom right</div>
+        <div class="bottomleft">Bottom left</div>
+        <div class="centered">Centered</div>
+    </div>
+    <hr>
+    <h1>CSS Layout - the Z index property</h1>
+    <p>When elements are positioned, they can overlap the other elements. The z-index property specifies the stack order of an element. (which element should be placed infront of or behind the othes). An element can have a positive or negative stack order.</p>
+    <p>Because the z-index property has a negative value, the image would be behind the text.</p>
+    <!--<img class="zindx" src="treeart.png" alt="atree">-->
+    <p>Z index element works only on positioned elements or flex items (elements that are direct children of display flex elements).</p>
+    <p>An element with a greater stack order is always above an element with lower stack order. See an example below!!</p>
+    <div class="container">
+        <div class="black-box">Black box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+    <p><b>Note:</b>If two positioned elements overlap each other without a z-index specified, the elements defined in the last in the HTML code will be shown on top. Such as green box in an example above will remain on top if the z-index is unspecified.</p>
+    <hr>
+    <h1>CSS Flexbox (Flexible Box Layout Module)</h1>
+    <pre class="pree">
+        Before the flexbox layout module, there were four layout modes:
+        (a) Block, used for sections in a web page
+        (b) Inline, used for text
+        (c) Table, used for two 2D table data
+        (d) Position, used for explicit position of an element
+    </pre>
+    <p>The flexible Box Layout Module makes it easier to design flexible resposnive layout structure without using float or positioning.</p>
+    <p><b>Flexbox Elements</b>To start using the Flexbox model, you need to first define a flex container.</p>
+    <h1>Create a Flex Container</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>A Flexible Layout must have a parent element with the <em>display</em>property set to <em>flex</em>.</p>
+    <p>Direct child element(s) of the flexible container automatically becomes flexible items.</p>
+    <pre class="pree2">
+        The flex-container properties are:
+        (a) flex-direction
+        (b) flex-wrap 
+        (c) flex-flow
+        (d) justify-content
+        (e) align-items 
+        (d) align-content
+    </pre>
+    <hr>
+    <h1>CSS Layout - Overflow</h1>
+    <p>The CSS overflow property controls what happens to content that is too big to fit into an area.</p>
+    <div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem asperiores explicabo? Beatae temporibus delectus mollitia. Magnam animi odio, blanditiis possimus doloribus corporis mollitia. Officiis perferendis harum quis accusantium rerum.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+    <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.</p>
+    <pre class="preee">
+        The overflow property has the specific values:
+        (a) Visible - This value is default and the overflow is not clipped. The content renders outside the element's box.
+        (b) Hidden - The overflow is clipped, and the rest of the content will be invisible
+        (c) Scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content.
+        (d) Auto - Similar to scroll, but it adds scrollbar only when necessary.
+    </pre>
+    <p><b>Note:</b>The overflow property only works for <em>block</em> elements with a specified height.</p>
+    <p><b>Note:</b>In OS X Lion (on Mac), scrollbars are hidden by default and only show when being used (even thought overflow: scroll; is set).</p>
+    <hr>
+    <h2>Oveflow: visible</h2>
+    <div class="visible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <br>
+    <br>
+    <br>
+    <h2>Overflow: hidden</h2>
+    <div class="hidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <h2>Overflow: scroll</h2>
+    <div class="scroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <h2>Overflow: auto</h2>
+    <div class="auto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <h2>Overflow-x and overflow-y</h2>
+    <p>You can chnage the overflow of content horizontally or vertically. Overflow-x specifies what to do with the left/right edges of the content while <em>y</em> specifies what to do with the top/bottom.</p>
+    <div class="xny">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <hr>
+    <h1>CSS Layout - float and clear</h1>
+    <p>The CSS float property specifies how an element should float while the clear property specifies what element can float beside the cleared element and on which side.</p>
+    <h2>The float property</h2>
+    <p>The float property is used for positioning and fromatting content. For example, let an image float left to the text in a container. The float property can have one of the following values: left, right, none, inherit. The float property can be used to wrap text around images.</p>
+    <h3>Float Right</h3>
+    <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p> 
+    <p><img id="strwbry" src="strawberry.jpg" alt="Strawberry" style="width: 200px; height: 250px; margin-left: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    <h3>See div elements float next to each other.</h3>
+    <div class="div1">div 1</div>
+    <div class="div2">div 2</div>
+    <div class="div3">div 3</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2>The clear property </h2>
+    <p>When clearing floats, you should match the clear to the float. If an element is floated to the left, then you should clear to the float.</p>
+    <div class="dc1">div 1</div>
+    <div class="dc2">div 2: This example clears the float to the left. It means that the element is pushed below the floated element.</div>
+    <p>The clearfix hack is used if a floated element is taller than the containing element so it won't overflow outside of its container.</p>
+    <hr>
+    <h1>Display inline-block explained!</h1>
+    <p>Comapred to the inline element, the major difference between the inline block element and inline element is that the inline-block element allows you to set the width and height of an element. Plus with the inline-block elements, the top and bottom margin/paddings are respected but with display: inline; they are not.</p>
+    <p>Compared to display: block; the major difference is that the inline-block does not add a line break after the element, so the elements can sit next to other elements</p>
+    <p>The following example shows the different behaviour with all three elements.</p>
+    <h3>Display: inline;</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
+    <h3>Display: inline-block;</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
+    <h3>Display: block;</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>
+    <hr>
+    <h1>CSS Dropdowns</h1>
+    <p>Create a hoverable dropdown with CSS.</p>
+    <h3>Hoverable Dropdown</h3>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-content">
+            <p>Hello World!</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>A dropdown menu</h3>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+    <div class="dd">
+        <button class="dropbtn">Dropdown</button>
+        <div class="ddc">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><strong>Note:</strong>Href="#" here are used for test links. In a real website, this would be URLs.</p>
+    <hr>
+    <h1>Using CSS to Style an HTML Form</h1>
+    <div>
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="your name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="your last name">
+
+        <label for="country">Country</label>
+        <select name="couuntry" id="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="USA">USA</option>
+        </select>
+
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    <hr>
+    <h2>Input field with an icon inside</h2>
+    <form action="">
+        <input class="iconinside" type="text" name="search" placeholder="Search">
+    </form>
+    
+
+</body>
+</html>
